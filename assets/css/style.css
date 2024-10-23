@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --background-color:#121826;
+    --card-background-color:#212936;
+    --text-color:#9DA3AE;
+    --titulos:#E5E7EB;
+    --card-1:#DEE9FC;
+    --card-2:#FBE5E6;
+    --card-3:#FCEED8;
+}
+body{
+    font-family: "Outfit", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    background-color: var(--background-color);
+    background-image: url('../imagenes/Background_image.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 2em;
+    padding: 3em 0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+section{
+    display: flex;
+    gap: 2.5em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+article{
+    width: 310px;
+    background-color: var(--card-background-color);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5em;
+    justify-content: space-between;
+    gap: 1em;
+    transition: var(--background-color) 1s linear;
+}
+article:hover{
+    background-color: hsl(217, 24%, 20%);
+}
+article img{
+    border-radius: 20px;
+}
+.emoticon{
+    border-radius: 50%;
+    width: fit-content;
+    padding: .8em;
+    font-size: 18px;
+}
+article:nth-child(1) .emoticon{
+    background-color: var(--card-2);
+}
+article:nth-child(2) .emoticon{
+    background-color: var(--card-1);
+}
+article:nth-child(3) .emoticon{
+    background-color: var(--card-3);
+}
+.texto_grande{
+    color: var(--titulos);
+}
+p{
+    color: var(--text-color);
+    font-size: 16px;
+}
+header h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 20px;
+}
+@media ()
